@@ -161,7 +161,7 @@ jobs:
           pacman -S --noconfirm --needed \
             base-devel git curl wget \
             zstd xz 7zip libarchive cpio \
-            e2fsprogs btrfs-progs android-tools mtools \
+            e2fsprogs btrfs-progs android-tools mtools dosfstools rsync \
             clang lld bc kmod util-linux dtc unzip github-cli
           # qemu 用户态模拟器: 包名在不同镜像上可能是 qemu-user 或 qemu-emulators-full
           pacman -S --noconfirm --needed qemu-user \
