@@ -228,9 +228,9 @@ jobs:
           path: |
             ${{ steps.disk.outputs.dir }}/raphael-build/dl
             ${{ steps.disk.outputs.dir }}/raphael-build/work/pkgcache
-          key: raphael-dl-${{ hashFiles('config/build.conf', 'scripts/00-fetch.sh', 'scripts/02-pacman.sh') }}
+          key: raphael-dl-v2-${{ hashFiles('config/build.conf', 'scripts/00-fetch.sh', 'scripts/02-pacman.sh') }}
           restore-keys: |
-            raphael-dl-
+            raphael-dl-v2-
 
       # ---------------------------------------------------------------- 构建
       - name: 应用账号 / 密码设置
